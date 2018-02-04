@@ -1,0 +1,319 @@
+@import url(reset.css);
+
+
+html {
+	height: 100%;
+}
+
+img, div, section {
+	border: 0;
+}
+
+body {
+	font-family: 'Crimson','Raleway', 'Open Sans';
+	font-size: 20px;
+	height: 100%;
+
+}
+
+.mainheader {
+	color:#191918;
+	height: 100%;
+	background-image: url(img/hipster.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+
+
+}
+
+.name {
+	width: 350px;
+	margin-right: 450px;
+	margin-left: 50px;
+	letter-spacing: 3px;
+	margin-top: 20px;
+}
+
+.nav{
+	list-style-type: none;
+	
+}
+
+.nav li {
+	padding: 10px;
+
+}
+
+.nav a {
+	text-decoration: none;
+	color: #191918;
+}
+
+.nav a:hover {
+	color: #585b5b;
+}
+
+.name,
+.nav, 
+.nav li{
+	display:inline-block;
+}
+
+
+
+.profilepic {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	margin-top: 20px;
+
+
+}
+
+.profpic {
+	width: 350px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+	margin-top: 105px;
+	line-height: 1.5em;
+}
+
+#avatar {
+	text-align: center;
+
+}
+
+.name {
+	color: black;
+
+}
+
+.name a:hover {
+	color: #585b5b;
+}
+
+.name a {
+	text-decoration: none;
+}
+
+.name a:visited {
+	color: black;
+}
+/*=======================================================ABOUT ME======================================================================*/
+.wrapper {
+	width: 90%;
+	background: #eff2f7;
+	margin: 0 auto;
+	border: 0;
+
+
+}
+
+.aboutme h2 {
+	text-align: center;
+	padding: 30px;
+}
+
+.intro, .skills, .hobbies, .music, .favbands {
+	width: 350px;
+	height: 320px;
+	display: inline-block;
+	border: 1px solid #a3a8af;
+	background: white;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-left: 22px;
+	vertical-align: top;
+}
+
+.certifications {
+	width: 350px;
+	height: 320px;
+	display: inline-block;
+	border: 1px solid #a3a8af;
+	background: white;
+	
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-left: 22px;
+	vertical-align: top;
+}
+
+.certifications h3 {
+	text-align: center;
+
+
+}
+
+.certifications ul {
+	margin-left: 25px;
+}
+
+#aboutme1 h3 {
+	margin: 20px;
+}
+
+span {
+	font-weight: 60;
+}
+
+.aboutme {
+	margin-bottom: 20px;
+}
+
+/*==============================================PORTFOLIO====================================================================================*/
+
+.portfolio h2 {
+	text-align: center;	
+	padding: 20px;
+}
+
+.portfolio {
+	border-top: 1px solid #a3a8af;
+	margin-bottom: 20px;
+
+
+}
+
+.portfolio img:hover {
+	opacity: 0.6;
+}
+
+.portfolio img {
+	/*margin-right: 5px;
+	margin-left: 20px;
+	margin-bottom: 5px;*/
+	margin: 10px;
+	margin-left: 18px;
+}
+
+/*============================================================BLOG=========================================================================*/
+
+.blog h1{
+	text-align: center;
+	padding: 20px;
+}
+
+.blog1, .blog2, .blog3, .blog4, .blog5, .blog6 {
+	width: 90%;
+	margin: 30px;
+	background: #fff;
+	padding: 20px;
+	display: inline-block;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6  {
+	float: right;
+	margin: 0px 0px 15px 20px;
+}
+
+h5 {
+	color: #9e9fa3;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.blog img:hover {
+	opacity: 0.6;
+
+}
+
+.blog {
+	border-top: 1px solid #a3a8af;
+}
+
+.blog h2 {
+	color: #474849;
+}
+/*===========================================================Footer====================================*/
+
+.footer {
+	width: 100%;
+	height: 380px;
+	background: #131414;
+	/*color: blac;*/
+	position: relative;
+}
+
+.footer ul {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer li {
+	list-style-type: none;
+}
+
+.footer a {
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	text-align: center;
+	line-height: 80px;
+	font-size: 35px;
+	margin: 0 10px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 3px solid #fff;
+	z-index: 1;
+}
+
+.footer a .fa {
+	position: relative;
+	color: #262626;
+	transition: .5s;
+}
+
+.footer a:hover .fa{
+	color: #fff;
+	transform: rotateY(360deg);
+}
+
+.footer a:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: .5s;
+	z-index: 2;
+}
+
+.footer a:hover:before {
+	top: 0;
+}
+
+.footer li:nth-child(1) a:before {
+	background: #3b5999;
+}
+
+.footer li:nth-child(2) a:before {
+	background: #e4405f;
+}
+
+.footer li:nth-child(3) a:before {
+	background: #ff3300;
+}
+
+.footer li:nth-child(4) a:before {
+	background: #cd201f;
+}
+
+.footer p {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	color: #fff;
+
+
+}
